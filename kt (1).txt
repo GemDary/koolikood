@@ -20,3 +20,4 @@ while str(tehe) != str(vastus):
 else:
     print("Said õige vastuse! Vastasid " + str((korda)) + " korda valesti.")
     punktid += 1
+    print("oled väga äge")
