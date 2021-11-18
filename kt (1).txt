@@ -1,0 +1,22 @@
+import random
+arv1 = random.randint(1, 10)
+arv2 = random.randint(1, 10)
+mark = ['*', '+']
+markran = random.choice(mark)
+punktid = 0
+korda = 0
+tehe = eval(input(str(arv1) + markran + str(arv2) + "="))
+vastus = eval(str(arv1) + markran + str(arv2))
+
+while str(tehe) != str(vastus):
+    punktid -= 1
+    korda += 1
+    print("Lahenda uuesti!")
+    arv1 = random.randint(1, 10)
+    arv2 = random.randint(1, 10)
+    markran = random.choice(mark)
+    tehe = eval(input(str(arv1) + markran + str(arv2) + "="))
+    vastus = eval(str(arv1) + markran + str(arv2))
+else:
+    print("Said õige vastuse! Vastasid " + str((korda)) + " korda valesti.")
+    punktid += 1
